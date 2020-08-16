@@ -1,0 +1,238 @@
+      *{
+            margin: 0;
+            padding: 0;
+
+        }
+      
+        body{
+            background-image: url(../images/narrow-porto-street-with-cathedral-in-distance-in-evening-4330054.jpg);
+            background-size: cover;
+        }
+                         /* Header */
+        .header{
+            display: flex;
+            align-content: center;
+            background-color: maroon;
+            text-shadow: black .2px 2px 2px;
+            padding: 20px;
+            justify-content: space-evenly;
+            letter-spacing: .2rem;
+        }
+        .header h1{
+            color: gold;
+        }
+        .fa:hover{
+            cursor:pointer;
+            color: gold;
+        }
+        .burger{
+            position: relative;
+            align-self: center;
+            left: 10px;
+            transition: all 1s linear;
+            color: white;
+        }
+        .burger:hover{
+            cursor: pointer;
+        }
+        .burger .line{
+            background-color: white;
+            border: solid;
+            border-radius: 5px;
+            width: 20px;
+            margin-top: 2px;
+        }
+        .burger:hover{
+            color: gold;
+        }
+        .input{
+            height: 20px;
+            align-self: center;
+            padding: 10px;
+        }
+                   /* Navigation Bar */
+        nav{
+            display: grid;
+            grid-template-rows: 20px 150px 50px auto;
+            position: fixed;
+            width: 20vw;
+            height: 100vh;
+            z-index: 1;
+            transition: all 1s linear;
+            transform: translateX(-100%);
+            background-color: maroon;
+            border: gold solid;
+        }
+        .user-img{
+            grid-row: 2/3;
+            overflow: hidden;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            background-color: black;   
+        }
+        .title{
+            background-color: black;
+        }
+        .nav{
+            grid-row: 4/5;
+    
+        }
+        .navbar{
+           display: flex;
+           align-content: center;
+           padding: 10px 25px;
+           display: block;
+        }
+        .navbar:active{
+            background-color: black;
+            color: gold;
+        }
+        .navbar:hover, .navbar:hover a{
+            background-color: black;
+            color:gold;
+        }
+        a, .members{
+            text-decoration: none;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+            letter-spacing: 0.1rem;
+            cursor: pointer;
+        }
+        .show{
+            transform: translateX(0%);
+        }
+        .img{
+            width: 40%;
+            grid-row: 2/3;
+            justify-self: center;
+        }
+        .title{
+            grid-row: 3/4;
+            text-align: center;
+            color: white;
+            font-size: smaller;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 10px 0px;            
+        }
+        .exit{
+            grid-row: 1/2;
+            color: white;
+            position: absolute;
+            padding: 10px;
+            right:0px;
+            font-size: x-large;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        .exit:hover{
+            color: red;
+        }
+        .hide{
+            transform: translateX(-100%);
+        }
+        main{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row: 1fr;
+        }
+                          /* Form */
+        .login{
+            grid-column: 1/2;
+            grid-row: 1/2;
+           
+        }
+        .signup{
+            grid-column: 2/3;
+        }
+        .login, .signup{
+            display: grid;
+            grid-template-rows: 100px auto;
+            justify-content: center;
+        
+        }
+        h3{
+            grid-row: 1/2;
+        }
+        .form{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 40px;
+            grid-row: 2/3;
+            border:black solid;
+            background-color: maroon;
+            color: white;
+            border: gold solid;
+        }
+        input{
+            font-size: large;
+        }
+    
+        .input-error{
+            box-shadow: 0 0 5px red;
+        }
+        .reg-title{
+            justify-self: center;
+            padding-bottom: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .btn{
+            color: black;
+            background-color: gold;
+            font-weight: bolder;
+            border: none;
+            padding: 5px;
+            letter-spacing: 0.1rem;
+            font-size: medium;
+            border: white solid;
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.795);
+            color: gold;
+            border:gold solid;
+        }
+        label, input {
+            padding: 5px;
+            outline: none;
+        }
+        .conceal{
+            display: none;
+        }
+
+        .sub{
+            padding: 10px 10px 10px 40px;
+        }
+        /* Input */
+        .input-container{
+            display: flex;
+            width: 100%;
+            margin: 15px;
+        }
+        icon{
+            min-width: 50px;
+            text-align: center;
+            background: black;
+            align-self: center;
+            padding: 10px 0px 10px 0px;
+        }
+        input:focus{
+            border: 2px solid gold;
+            outline:none
+        }
+                       /* Alert */
+        .error{
+            background-color: red;
+            color: white;
+        }
+        .success{
+            background-color: green;
+            color: white;
+        }
+        .error, .success{
+            padding: 10px;
+            font-size: large;
+            margin-bottom: 5px;
+        }
+   
