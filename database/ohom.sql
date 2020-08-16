@@ -1,0 +1,2 @@
+CREATE TABLE `ohom`.`committee` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `name` VARCHAR(64) NOT NULL , `email` VARCHAR(64) NOT NULL , `password` VARCHAR(64) NOT NULL , `property` VARCHAR(128) NOT NULL , `address` VARCHAR(128) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `ohom`.`tenants` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `name` VARCHAR(64) NOT NULL , `email` VARCHAR(64) NOT NULL , `apt_number` INT(11) NOT NULL ,`password` VARCHAR(64) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
