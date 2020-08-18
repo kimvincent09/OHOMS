@@ -49,7 +49,7 @@ echo
         <li class="navbar members">Members <i class="fa fa-chevron-down"></i></li>
         <ol class="conceal">
         <li class="navbar sub"><a href = "committee/create.php">Committee</a></li>
-        <li class="navbar sub"><a href = "tenants.php">Tenants</a></li>
+        <li class="navbar sub"><a href = "tenants/create.php">Tenants</a></li>
         </ol>
         <li class="navbar"><a href = "#">Events</a></li>
         <li class="navbar"><a href = "#">Property</a></li>
