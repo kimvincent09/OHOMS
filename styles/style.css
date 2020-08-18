@@ -9,15 +9,17 @@
             background-size: cover;
         }
                          /* Header */
-        .header{
-            display: flex;
-            align-content: center;
-            background-color: maroon;
-            text-shadow: black .2px 2px 2px;
-            padding: 20px;
-            justify-content: space-evenly;
-            letter-spacing: .2rem;
-        }
+                         .header{
+                            display: flex;
+                            align-content: center;
+                            background-color: maroon;
+                            text-shadow: black .2px 2px 2px;
+                            padding: 16px;
+                            justify-content: space-evenly;
+                            letter-spacing: .2rem;
+                            border: gold solid;
+                        
+                        }
         .header h1{
             color: gold;
         }
@@ -51,18 +53,18 @@
             padding: 10px;
         }
                    /* Navigation Bar */
-        nav{
-            display: grid;
-            grid-template-rows: 20px 150px 50px auto;
-            position: fixed;
-            width: 20vw;
-            height: 100vh;
-            z-index: 1;
-            transition: all 1s linear;
-            transform: translateX(-100%);
-            background-color: maroon;
-            border: gold solid;
-        }
+                   nav{
+                    display: flex;
+                    position: fixed;
+                    top: 10vh;
+                    width: 15vw;
+                    height: 90vh;
+                    transition: all 1s linear;
+                    transform: translateX(-100%);
+                    background-color: maroon;
+                    border: gold solid;
+                  
+                }
         .user-img{
             grid-row: 2/3;
             overflow: hidden;
@@ -75,15 +77,16 @@
             background-color: black;
         }
         .nav{
-            grid-row: 4/5;
+          align-items:center;
     
         }
         .navbar{
-           display: flex;
-           align-content: center;
-           padding: 10px 25px;
-           display: block;
-        }
+            display: flex;
+            align-content: center;
+            padding: 10px 25px;
+            display: block;
+         }
+        
         .navbar:active{
             background-color: black;
             color: gold;

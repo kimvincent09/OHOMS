@@ -37,20 +37,18 @@ echo '<!DOCTYPE html>
 if(isset($_SESSION['userId']))
 echo 
 '<body>
+
+
     <nav>
         <div class="user">
-        <div class="exit"><i class="fa fa-close"></i></div>
-        <div class="user-img">
-            <img src="images/m.png" class="img">
-        </div>
-        <div class="title"><h1>Default User</h1></div>
- </div>
+        
+  
     <ul class="nav">
         <li class="navbar"><a href = "#">Home</a></li>
         <li class="navbar"><a href = "#">Account</a></li>
         <li class="navbar members">Members <i class="fa fa-chevron-down"></i></li>
         <ol class="conceal">
-        <li class="navbar sub"><a href = "committee.php">Committee</a></li>
+        <li class="navbar sub"><a href = "committee/create.php">Committee</a></li>
         <li class="navbar sub"><a href = "tenants.php">Tenants</a></li>
         </ol>
         <li class="navbar"><a href = "#">Events</a></li>
@@ -59,20 +57,18 @@ echo
         <li class="navbar"><a href = "#">Calendar</a></li>
         <li class="navbar"><a href = "#">Reports</a></li>
         <li class="navbar"><a href = "#">Payment</a></li>
-       <center> <form action = "includes/logout.inc.php" method="post"> <button type = "submit" name="logout" class="btn">Logout</button>
-        </form></center>
+      
     </ul>
     </nav>
     <div class="header">
         <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+        <i class="fa fa-bars"></i>
         </div>
 
         <h1> Online Home Owners Management System</h1>
       
-        
+        <center> <form action = "includes/logout.inc.php" method="post"> <button type = "submit" name="logout" class="btn">Logout</button>
+        </form></center>
     </div>
     <main>
        

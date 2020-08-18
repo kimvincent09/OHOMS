@@ -2,16 +2,21 @@ const burger = document.querySelector('.burger')
 const nav = document.querySelector('nav')
 const exit = document.querySelector('.exit')
 const dropdown = document.querySelector('.fa-chevron-down');
+const menu = document.querySelector('.fa-bars')
 
 
 let click =0;
 burger.addEventListener('click', ()=>{
+    click++;
+    if(click == 1){
 nav.classList = 'nav show';
-
-
-})
-exit.addEventListener('click', ()=>{
+menu.classList = 'fa fa-close';
+    }
+    else if(click ==2){
     nav.classList = 'nav hide';
+    menu.classList = 'fa fa-bars';
+    click = 0;
+    }
 })
 
 document.querySelector('.members').addEventListener('click', ()=>{
